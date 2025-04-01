@@ -1,3 +1,11 @@
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
 body {
     font-family: 'Courier New', monospace;
     background: #000;
@@ -5,76 +13,22 @@ body {
     text-align: center;
     padding: 0rem;
 }
+injected stylesheet
+:host, :root {
+    --rem: 16;
+}
 ::selection {
-    background: #0f0; /* Neon green */
-    color: #000;
-    text-shadow: 0 0 5px #0f0; /* Glow effect */
-  }
-
-.glitch {
-    animation: glitch 1s infinite;
-    font-size: 12em;
-}
-@keyframes glitch {
-    0% { text-shadow: 0.05em 0 0 #00fffc, -0.05em -0.025em 0 #fc00ff; }
-    14% { text-shadow: 0.05em 0 0 #00fffc, -0.05em -0.025em 0 #fc00ff; }
-    15% { text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.025em 0 #fc00ff; }
-    49% { text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.025em 0 #fc00ff; }
-    50% { text-shadow: 0.025em 0.05em 0 #00fffc, 0.05em 0 0 #fc00ff; }
-    99% { text-shadow: 0.025em 0.05em 0 #00fffc, 0.05em 0 0 #fc00ff; }
-    100% { text-shadow: -0.025em 0 0 #00fffc, -0.025em -0.025em 0 #fc00ff; }
-}
-input, button {
-    background: #111;
-    color: #0f0;
-    border: 1px solid #0f0;
-    padding: 10px;
-    margin: 5px;
-    font-family: 'Courier New', monospace;
-}
-button:hover {
     background: #0f0;
     color: #000;
-    cursor: pointer;
+    text-shadow: 0 0 5px #0f0;
 }
-
-.social-links {
-    margin: 2rem 0;
-    padding: 1rem;
-    border-top: 1px dashed #0f0;
-    border-bottom: 1px dashed #0f0;
+::selection {
+    background: #0f0;
+    color: #000;
+    text-shadow: 0 0 5px #0f0;
 }
-
-.social-links p {
-    margin-bottom: 1rem;
-    font-size: 0.9rem;
-    color: #0f0;
+::selection {
+    background: #0f0;
+    color: #000;
+    text-shadow: 0 0 5px #0f0;
 }
-
-.glitch-link {
-    color: #0f0;
-    text-decoration: none;
-    margin: 0 10px;
-    position: relative;
-    display: inline-block;
-}
-
-.glitch-link:hover {
-    animation: glitch 0.5s infinite;
-    color: #fc00ff; /* Neon pink for hover */
-}
-
-/* Optional: Animated "pulse" effect on icons */
-@keyframes pulse {
-    0% { opacity: 0.6; }
-    50% { opacity: 1; }
-    100% { opacity: 0.6; }
-}
-
-.social-links a::after {
-    content: "■";
-    margin-left: 5px;
-    animation: pulse 2s infinite;
-}
-
-.hp { display: none; } /* Honeypot */
