@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply: Graphic Designer</title>
+    <link rel="icon" type="png" href="Favicon.png">
+    <style>
+            body {
+            font-family: 'Courier New', monospace;
+            background: #000;
+            color: #0f0;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+    text-align: center;
+    animation: glitch 1s infinite;
+}
+@keyframes glitch {
+    0% { text-shadow: 0.05em 0 0 #00fffc, -0.05em -0.025em 0 #fc00ff; }
+    50% { text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.025em 0 #fc00ff; }
+    100% { text-shadow: 0.025em 0.05em 0 #00fffc, 0.05em 0 0 #fc00ff; }
+}
+
+        .glitch-link:hover {
+            animation: glitch 0.5s infinite;
+            color: #fc00ff; /* Neon pink for hover */
+        }
+
+        /* Optional: Animated "pulse" effect on icons */
+        @keyframes pulse {
+            0% { opacity: 0.6; }
+            50% { opacity: 1; }
+            100% { opacity: 0.6; }
+        }
+
+        input, textarea {
+            width: 100%;
+            background: #111;
+            color: #0f0;
+            border: 1px solid #0f0;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+        button {
+            background: #0f0;
+            color: #000;
+            border: none;
+            padding: 12px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .hp { display: none; }
+        .social-links {
+            text-align: center;
+            margin: 20px 0;
+        }
+        pre {
+            display: inline-block;
+            text-align: left;
+            margin: 0 auto;
+            padding: 10px;
+            background: #111;
+            border: 1px dashed #0f0;
+            max-width: 100%;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        big p {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>GRAPHIC DESIGNER</h1>
+
+
+    <div class="social-links">
+        <big><p>Job Responsibilities:</p></big>
+        <pre>
+            [ VISUAL SYSTEMS ]
+            ├─ Identity Forging: Craft brand DNA
+            ├─ Glitch Fabrication: Generate cyberpunk assets
+            ├─ Interface Coding: Design user pathways
+            ├─ Vision Protocol: Direct creative ops
+            └─ Reality Hacking: Build AR/web experiences
+        </pre>
+    </div>
+
+    <form action="https://formsubmit.co/prject404s0ciety@gmail.com" method="POST">
+        <!-- FormSubmit Config -->
+        <input type="hidden" name="_subject" value="[GRAPHIC DESIGNER] New Application">
+        <input type="hidden" name="_next" value="https://404s0ciety.com/thank-you.html">
+        <input type="hidden" name="_template" value="table">
+
+        <!-- Honeypot -->
+        <input type="text" name="_honey" class="hp">
+
+        <!-- Auto-filled Job Field -->
+        <input type="hidden" name="Position" value="Graphic Design">
+
+        <!-- Form Fields -->
+        <input type="text" name="Alias" placeholder="Your Name" required>
+        <input type="email" name="Email" placeholder="Provide us your Email" required>
+        <textarea name="Proof" placeholder="Describe your Graphic Design experience " rows="5" required></textarea>
+        <input type="text" name="Signal/Telegram" placeholder="LinkedIn Profile (Optional)">
+        <button type="submit">SUBMIT </button>
+    </form>
+</body>
+</html>
