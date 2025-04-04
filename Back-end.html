@@ -15,6 +15,20 @@
             padding: 20px;
         }
 
+        .cyber-upload-btn {
+    background: #111;
+    color: #0f0;
+    border: 1px dashed #0f0;
+    padding: 10px;
+    cursor: pointer;
+    display: block;
+    margin: 15px 0;
+  }
+  .cyber-upload-btn:hover {
+    background: #0f0;
+    color: #000;
+  }
+
         h1 {
     text-align: center;
     animation: glitch 1s infinite;
@@ -109,6 +123,10 @@
         <input type="email" name="Email" placeholder="Provide us your Email" required>
         <textarea name="Proof" placeholder="Describe your Back-end Developing experience " rows="5" required></textarea>
         <input type="text" name="Signal/Telegram" placeholder="LinkedIn Profile (Optional)">
+        <input type="file" name="attachment" accept=".pdf" style="display: none;" id="pdfUpload">
+        <label for="pdfUpload" class="cyber-upload-btn">
+          📁 UPLOAD DOSSIER (PDF ONLY)
+        </label>
         <button type="submit">SUBMIT </button>
     </form>
 </body>
